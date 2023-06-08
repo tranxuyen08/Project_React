@@ -7,5 +7,5 @@ export const rootReducer = {
   user : UserSlice,
   products: reducerProductsSlice,
   movieVenue : reducerLocaltionSlice,
-  listOrders : listOrdersSlice
+  listOrders : listOrdersSlice,
 }

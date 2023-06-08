@@ -13,29 +13,39 @@ export const login = createAsyncThunk(
   "login/fetchAuth",
   async (payload) => {
 
-      const response = await UserAPI.login(payload);
-      console.log(response)
-      const data = response.user;
-      data && localStorage.setItem("user", JSON.stringify(data));
-      data &&
-        localStorage.setItem(
-          "accessTokenLogin",
-          JSON.stringify(response.accessToken)
-        );
-      return data;
+    const response = await UserAPI.login(payload);
+    const data = response.user;
+    data && localStorage.setItem("user", JSON.stringify(data));
+    data &&
+      localStorage.setItem(
+        "accessTokenLogin",
+        JSON.stringify(response.accessToken)
+      );
+    return data;
 
+  }
+)
+export const userManager = createAsyncThunk(
+  "userManager/fetchUserManager",
+  async (payload) => {
+    const response = await UserAPI.userManager(payload)
+    return response
   }
 )
 const UserSlice = createSlice({
   name: "user",
-  initialState: JSON.parse(localStorage.getItem('users')) ?? {},
+  initialState: JSON.parse(localStorage.getItem('users')) ?? [],
   extraReducers: {
     [register.fulfilled]: (state, action) => {
       state = action.payload.user
       return state
     },
     [login.fulfilled]: (state, action) => {
-      if(action.payload) return state = action.payload;
+      if (action.payload) return state = action.payload;
+      return state
+    },
+    [userManager.fulfilled]: (state, action) => {
+      state = action.payload;
       return state
     }
   }

@@ -1,13 +1,21 @@
 import React from "react";
-import {AiFillDelete} from 'react-icons/ai'
+import { AiFillDelete } from "react-icons/ai";
 import "./Users.css";
 import SlideBarAdmin from "../SliderBar/SlideBarAdmin";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteUser } from "../../../redux/reducer/UserSlice";
 const Users = () => {
+  const dispatch = useDispatch()
+  const usersManger = useSelector((state) => state.user);
+
   return (
     <div className="content-user">
-      <SlideBarAdmin/>
+      <SlideBarAdmin />
       <div className="table-content">
-        <div className="wrapper-title"><span className="sperator"></span><span className="title-page">My Admin</span></div>
+        <div className="wrapper-title">
+          <span className="sperator"></span>
+          <span className="title-page">My Admin</span>
+        </div>
         <table>
           <thead>
             <tr>
@@ -15,19 +23,19 @@ const Users = () => {
               <th>ID User</th>
               <th>Name</th>
               <th>Email</th>
-              <th>Action</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>NO</td>
-              <td>ID User</td>
-              <td>Name</td>
-              <td>Email</td>
-              <td>
-                <AiFillDelete className="btn-delete"/>
-              </td>
-            </tr>
+            {usersManger && usersManger?.map((item, index) => {
+              return (
+                <tr key={item?.id}>
+                  <td>{index + 1}</td>
+                  <td>{item?.id}</td>
+                  <td>{item?.name}</td>
+                  <td>{item?.email}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

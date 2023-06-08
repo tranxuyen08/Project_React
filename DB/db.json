@@ -10,19 +10,20 @@
       "year": "1998",
       "country": "DaNang",
       "id": 1
+    },
+    {
+      "email": "tranxuyen081@gmail.com",
+      "password": "$2a$10$9pLvE53SYFkZbNCtLAr4QOnf0ur5E0syRBmfoOnoafjVUGoQ0H59y",
+      "name": "Xuyen TN",
+      "phone-number": "0342222666",
+      "day": "8",
+      "month": "6",
+      "year": "1998",
+      "country": "DaNang",
+      "id": 2
     }
   ],
   "products": [
-    {
-      "id": 1,
-      "nameMovie": "NGƯỜI NHỆN: DU HÀNH VŨ TRỤ NHỆN",
-      "type": "playing soon",
-      "time": "140",
-      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/r/s/rsz_spiderverse2_poster_4.jpg",
-      "theLoai": "Hành Động, Khoa Học Viễn Tưởng, Phiêu Lưu",
-      "khoiChieu": "01-06-2023",
-      "trailler": "https://www.youtube.com/embed/cqGjhVJWtEg"
-    },
     {
       "id": 2,
       "nameMovie": "FAST AND FURIOUS X",
@@ -32,16 +33,6 @@
       "theLoai": "Hành Động, Tội phạm",
       "khoiChieu": "19-05-2023",
       "trailler": "https://www.youtube.com/embed/eoOaKN4qCKw"
-    },
-    {
-      "id": 3,
-      "nameMovie": "PHIM ĐIỆN ẢNH DORAEMON: NOBITA VÀ VÙNG ĐẤT LÝ TƯỞNG TRÊN BẦU TRỜI",
-      "type": "playing soon",
-      "time": "108",
-      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/m/a/main_poster_-_dmmovie2023.jpg",
-      "theLoai": "Hoạt Hình",
-      "khoiChieu": "26-05-2023",
-      "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
     },
     {
       "id": 4,
@@ -258,24 +249,6 @@
       "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/m/a/main_poster_-_dmmovie2023.jpg",
       "price": 110000,
       "id": 1
-    },
-    {
-      "idUser": 1,
-      "idProducts": "2",
-      "name": "Da Nang",
-      "time": "9:20 AM",
-      "day": 8,
-      "month": "Jun",
-      "dayOfWeek": "Thu",
-      "nameCinema": "CGV Vincom Đà Nẵng",
-      "seats": [
-        "B6",
-        "B5"
-      ],
-      "nameMovie": "FAST AND FURIOUS X",
-      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/7/0/700x1000-fastx_1.jpg",
-      "price": 110000,
-      "id": 2
     }
   ]
 }

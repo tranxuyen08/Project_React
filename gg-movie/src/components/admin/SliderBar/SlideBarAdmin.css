@@ -80,3 +80,26 @@
 .btn-sign-out:hover{
   background-color: #646466;
 }
+
+@media (max-width:1200px) {
+  .sidebar-wrappers {
+    width: 60px;
+  }
+
+  .list-manager li span {
+    display: none;
+  }
+
+  .logo-admin span {
+    display: none;
+  }
+
+  .btn-sign-out span {
+    display: none;
+  }
+
+  .btn-sign-out {
+    font-size: 40px;
+    background-color: transparent;
+  }
+}

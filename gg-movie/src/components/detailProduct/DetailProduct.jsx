@@ -23,7 +23,6 @@ const DetailProduct = () => {
       theLoai : "",
       khoiChieu: ""
   }
-  console.log(params.id);
 
   const handleBuyTicket = () => {
     const user = JSON.parse(localStorage.getItem("user"));

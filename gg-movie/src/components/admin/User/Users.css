@@ -93,5 +93,17 @@ table{
   background-color: #646466;
 }
 
+@media (max-width:1200px) {
+  .content-user  {
+    margin-left: 60px;
+  }
+  .table-content {
+    min-width: 700px;
+  }
+
+  .table-content table {
+    overflow-x: auto;
+  }
+}
 
 

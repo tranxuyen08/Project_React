@@ -8,6 +8,7 @@ export const callProductsAPI = createAsyncThunk(
     return response
   }
 )
+
 export const productsSlice = createSlice({
   name: 'products',
   initialState: [],
@@ -16,7 +17,7 @@ export const productsSlice = createSlice({
     [callProductsAPI.fulfilled] : (state,action) =>{
       state = action.payload
       return state
-    }
+    },
   }
 })
 

@@ -19,10 +19,12 @@ import Admin from './components/admin/Admin';
 import Users from './components/admin/User/Users';
 import HistoryProducts from './components/admin/HistoryProducts/HistoryProducts';
 import ProductManager from './components/admin/ProductsManager/ProductManager';
+import { handleCallHistoryOrders } from './redux/reducer/AdminSlice';
 function App() {
   const dispatch = useDispatch()
   const [renderNameMOvie, setRenderNameMovie] = useState('')
   const products = useSelector(state => state.products)
+  const listOrders = useSelector(state => state.listOrders)
   useEffect(() => {
     const getProduct = async () => {
       await dispatch(callProductsAPI()).unwrap()
@@ -35,6 +37,7 @@ function App() {
     }
     getLocation()
   },[])
+
   return (
     <Routes>
       <Route path='/' index element={<HomePages><ComponentsChild /></HomePages>} />

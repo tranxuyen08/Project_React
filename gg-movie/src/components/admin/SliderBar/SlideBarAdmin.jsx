@@ -8,7 +8,7 @@ function SlideBarAdmin() {
   return (
     <div className="sidebar-wrappers">
       <div className="logo">
-        <h4 className='logo-admin'><RiAdminFill style={{color: "white !important"}}/> CGV Cinema</h4>
+        <h4 className='logo-admin'><RiAdminFill style={{color: "white !important"}}/> <span>CGV Cinema</span></h4>
       </div>
       <div className="group-btn">
         <ul className='list-manager'>
@@ -34,7 +34,7 @@ function SlideBarAdmin() {
       </div>
       <div className='sign-out'>
         <button className='btn-sign-out'>
-            <BiLogOut/> Logout
+            <BiLogOut/> <span>Logout</span>
         </button>
       </div>
     </div>

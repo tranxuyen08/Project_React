@@ -5,7 +5,7 @@ export const callListOrdersAPI = createAsyncThunk(
 
   "listOrders/fetchAllListOrders",
   async (action) => {
-    const response = await ListOrdersAPI.getAllListOrders()
+    const response = await ListOrdersAPI.getListOrders()
     return response
   }
 )

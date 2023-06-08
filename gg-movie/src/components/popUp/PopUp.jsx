@@ -15,7 +15,6 @@ const Popup = ({ handleClosePopup }) => {
   const [isBookingComplete, setIsBookingComplete] = useState(false);
   const navigate = useNavigate();
   const handleSelectDate = (date) => {
-    console.log(date);
     setSelectedDay(date.day);
     setSelectedMonth(date.month);
     setSelectedDayOfWeek(date.dayOfWeek);

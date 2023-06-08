@@ -12,7 +12,7 @@ const CheckOut = () => {
   const listOrders = useSelector((state) => state.listOrders);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  console.log("order", order);
+  
   const handleConfirm = async () => {
     // Xử lý khi người dùng đồng ý
     setShowConfirmModal(false); // Ẩn modal confirm

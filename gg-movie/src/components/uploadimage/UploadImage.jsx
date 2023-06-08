@@ -10,7 +10,6 @@ const UploadImage = () => {
     const imgRefs = ref(storages, `image/${fileImage.name}`)
     uploadBytes(imgRefs, fileImage).then((snapshot) =>{
       getDownloadURL(snapshot.ref).then((url) =>{
-        console.log(url);
         setImageList([...imageList, url])
       })
     })
