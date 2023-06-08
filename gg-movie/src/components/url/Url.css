@@ -1,0 +1,14 @@
+.breadcrumbs>ul {
+  display: flex;
+  gap: 10px;
+}
+
+.list-url {
+  background-color: #f1f0e5;
+  border-bottom: 1px solid #cacac0;
+  padding: 5px 0;
+  margin-bottom: 50px;
+}
+.home > a{
+  color: black ;
+}

@@ -1,0 +1,67 @@
+/* .sect-products{
+  margin-bottom: 50px;
+} */
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cgv-info-bold {
+  color: black;
+  font-weight: 700;
+}
+
+.card>a {
+  height: 350px;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-style {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  gap: 10px;
+  color: white;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.btn-like {
+  background-color: #1877f2;
+}
+
+.btn-buy {
+  background-color: #e83731;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* Số dòng tối đa */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black !important;
+  font-weight: bold !important;
+}
+.card-img{
+  height: 350px;
+}

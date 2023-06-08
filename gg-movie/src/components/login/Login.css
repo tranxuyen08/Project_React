@@ -1,0 +1,14 @@
+.error-message {
+  color: red;
+}
+#cgv-btnsignup{
+  padding-bottom: 20px;
+}
+.sect-login{
+  background-image: url(https://rapchieuphim.com/photos/cinema/cgv-big-c-nha-trang-main-image.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-login > div{
+  padding-bottom: 10px
+}

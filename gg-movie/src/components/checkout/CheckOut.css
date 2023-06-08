@@ -1,0 +1,91 @@
+.title-booking{
+  margin-bottom: 0 !important;
+}
+.content-payment{
+  padding: 20px 0;
+  background-color: #fff9e8;
+}
+.payments > ul{
+  display: flex;
+  /* grid-template-columns: auto auto; */
+  align-items: center;
+}
+.checkout-products{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.checkout-seats{
+  display: flex;
+  gap: 20px;
+}
+.time-play{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.time-play> div{
+  display: flex;
+  gap: 5px;
+}
+.day > p{
+  color: #e71a0f;
+}
+.day > p{
+  font-size: 32px;
+}
+.payments >ul >li {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  gap: 50px;
+}
+.item-payment{
+  display: flex;
+  gap: 20px;
+}
+.item-payment > div{
+  width: 50px;
+  height: 50px;
+}
+.item-payment > input{
+  width: 5px;
+  height: 5px;
+}
+.item-payment > p{
+  color: black;
+}
+.content-payment{
+  display: grid;
+  row-gap: 30px;
+}
+.total-payment{
+  display: flex;
+  gap: 20px;
+}
+.total-payment > p {
+  color: black;
+  font-weight: 600;
+}
+.btn-payment{
+  border: none;
+  padding: 10px 0;
+  border-radius: 15px;
+  background-color: #e71a0f;
+  color: white;
+}
+.price{
+  color: #e71a0f;
+}
+.detail-checkout{
+  display: grid;
+  gap: 20px;
+}
+.btn-yes{
+  background-color: #e71a0f;
+  color: white;
+}
+.btn-no{
+  background-color: gray;
+  color: white;
+}

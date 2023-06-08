@@ -1,0 +1,107 @@
+.header {
+  background-image: url(../../../public/image/bg-top.png);
+  padding: 27px 0 32px 0;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+
+.top-header-content {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.top-header-content>a:first-child>i {
+  font-size: 25px;
+}
+
+.top-header-content>a {
+  color: #666;
+}
+.user-text{
+  display: flex;
+  gap: 10px;
+}
+.user-text > p {
+  color: black;
+}
+h1 {
+  color: red;
+}
+
+.link-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-link>a {
+  color: black;
+  font-weight: 700;
+}
+
+.buy-ticket-now>a {
+  color: black;
+  font-weight: 700;
+}
+
+.badge-recruitment {
+  display: flex !important;
+  align-items: center;
+}
+
+.badge-recruitment>a {
+  color: black;
+  font-weight: 700 !important;
+}
+
+.recruitment {
+  width: 30px;
+  height: 30px;
+}
+
+.buy-ticket-now {
+  width: 100px;
+  height: 70px;
+  margin-top: -30px;
+  padding-left: 20px;
+}
+
+.cgv-logo {
+  width: 140px;
+  height: 60px;
+}
+
+.item-link:first {
+  position: relative;
+}
+
+.type-movie {
+  display: none;
+  position: absolute;
+  top: 108px;
+  left: 370px;
+  z-index: 5;
+  background: url(../../../public/image/bg_menu_hover.png);
+  border: 3px solid white;
+  padding: 20px !important;
+}
+
+.type-movie>li>a {
+  font-weight: 700;
+  color: white;
+}
+
+.item-link:first-child:hover>.type-movie {
+  display: block;
+}
+
+.type-movie>li>a:hover {
+  color: #e71a0f !important;
+}

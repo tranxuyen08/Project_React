@@ -1,0 +1,226 @@
+.screen {
+  background-image: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-screen.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 45px;
+  margin: 20px auto 40px;
+  text-align: center;
+  background-size: 100% auto;
+  text-indent: -99999px;
+
+}
+.content-booking{
+  margin-bottom: 50px;
+}
+
+.content-booking>ul {
+  display: grid;
+  gap: 10px;
+}
+
+.seat-block {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 10px;
+}
+
+.seat-row {
+  display: flex;
+  gap: 10px;
+}
+
+.seat-row>.seat {
+  border: 1px solid green;
+  color: green;
+}
+
+.seat-row:nth-child(8)>.seat {
+  border: 1px solid red;
+  color: red;
+}
+
+.seat-row:nth-child(9)>.seat {
+  border: 1px solid red;
+  color: red;
+}
+
+.seat-row:last-child>.seat {
+  border: 1px solid red;
+  color: red;
+}
+
+.seat {
+  flex: 1;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f2f2f2;
+  border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+.title-booking {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+  margin: 20px 0;
+}
+
+.booking-top>h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: #ccc;
+  padding: 5px 0;
+  font-style: italic;
+}
+
+.ticketbox-notice {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 30px;
+}
+.checked{
+  color:#b11500;
+}
+.checked:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 0 0;
+  background: #b11500;
+}
+
+.choosed:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 0 0;
+  background-color: gray;
+}
+
+.classic:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 0 0;
+  border: 1px solid green;
+}
+
+.vip:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 0 0;
+  border: 1px solid red;
+}
+
+.bottom-content {
+  background-image: url(https://flyer.vn/wp-content/uploads/2022/09/your-favorite-movie-1024x576.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minicart-wrapper>ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.table-detail {
+  display: grid;
+  gap: 30px;
+}
+
+.product-detail {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.product-detail > div > p{
+  font-weight: 700;
+}
+.products-detail-img {
+  width: 100px;
+  height: 150px;
+  border: 5px solid white;
+}
+
+.table-detail {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-detail th,
+.table-detail td {
+  min-width: 100px;
+  padding: 8px 4px;
+  color: white;
+}
+
+.table-detail th:first-child {
+  width: 100px;
+  /* Đặt độ rộng tùy ý cho cột đầu tiên */
+}
+
+.table-detail td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 4px;
+  color: white;
+}
+
+.table-detail tr:last-child td {
+  border-bottom: none;
+  /* Loại bỏ đường viền phía dưới của hàng cuối cùng */
+}
+
+p {
+  color: white;
+}
+.seats{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+.seats > p{
+  font-weight: 500;
+}
+
+table * {
+  text-align: center;
+}
+.size-large{
+  min-width: 200px !important;
+}
+.btn-booking{
+  border: none;
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  color: white;
+  background-color: #b11500;
+  align-items: center;
+  border-radius: 15px;
+}
+.hidden{
+  display: none;
+}

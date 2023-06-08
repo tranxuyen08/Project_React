@@ -1,0 +1,61 @@
+.footer-brand-slide {
+  border-bottom: 2px solid black;
+  border-top: 2px solid;
+  margin-bottom: 20px;
+}
+
+.sect-smuse {
+  background-image: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/brand-type-film-footer_ver2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 28px;
+  width: 100%;
+  text-indent: -99999px;
+  white-space: nowrap;
+}
+
+
+.sect-smuse ul {
+  display: flex;
+}
+
+.list-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cgv-permission {
+  background-image: url(https://www.cgv.vn/skin/frontend/cgv/default/images/cong-thuong.PNG);
+  width: 162px;
+  height: 70px;
+  position: relative;
+  text-indent: -9999px;
+  background-size: 150px;
+}
+
+.item-footer:nth-child(3) ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.item-footer:nth-child(3) ul li i {
+  font-size: 35px;
+}
+
+.title-h3 {
+  color: #302f2f;
+  font-size: 20px;
+}
+
+.item-footer ul li {
+  color: #636363;
+}
+.item-footer ul li i.fab.fa-instagram-square {
+  color: #c32aa3;
+}
+
+.item-footer ul li i.fab.fa-google {
+  color: #DB4437;
+}

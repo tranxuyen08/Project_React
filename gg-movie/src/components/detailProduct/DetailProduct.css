@@ -1,0 +1,50 @@
+.title-h2-product{
+  background-image: none !important;
+}
+.content-detail{
+  margin-bottom: 50px;
+}
+.product-essential{
+  display: flex;
+  width: 100%;
+  gap: 2%;
+}
+.img-flim{
+  width: 30%;
+}
+.img-flim > div:first-child{
+  margin-bottom: 20px;
+}
+.detail-film{
+  width: 70%;
+}
+.title-h3{
+  border-bottom: 1px solid #333 ;
+  padding-bottom: 20px;
+}
+.infor-product{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.label{
+  font-weight: 700;
+  color: black;
+
+}
+.detail-action{
+  display: flex;
+  justify-content: space-around;
+}
+.btn-buy{
+  width: 150px;
+  justify-content: space-around;
+}
+.trailer{
+  display: flex !important;
+  width: 100%;
+  justify-content: center !important;
+}
+.text{
+  color: #1f1b1b;
+}

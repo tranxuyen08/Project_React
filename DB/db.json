@@ -1,0 +1,281 @@
+{
+  "users": [
+    {
+      "email": "tranxuyen08@gmail.com",
+      "password": "$2a$10$9pLvE53SYFkZbNCtLAr4QOnf0ur5E0syRBmfoOnoafjVUGoQ0H59y",
+      "name": "tran ngoc xuyen",
+      "phone-number": "0342222704",
+      "day": "8",
+      "month": "6",
+      "year": "1998",
+      "country": "DaNang",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "nameMovie": "NGƯỜI NHỆN: DU HÀNH VŨ TRỤ NHỆN",
+      "type": "playing soon",
+      "time": "140",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/r/s/rsz_spiderverse2_poster_4.jpg",
+      "theLoai": "Hành Động, Khoa Học Viễn Tưởng, Phiêu Lưu",
+      "khoiChieu": "01-06-2023",
+      "trailler": "https://www.youtube.com/embed/cqGjhVJWtEg"
+    },
+    {
+      "id": 2,
+      "nameMovie": "FAST AND FURIOUS X",
+      "type": "playing soon",
+      "time": "141",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/7/0/700x1000-fastx_1.jpg",
+      "theLoai": "Hành Động, Tội phạm",
+      "khoiChieu": "19-05-2023",
+      "trailler": "https://www.youtube.com/embed/eoOaKN4qCKw"
+    },
+    {
+      "id": 3,
+      "nameMovie": "PHIM ĐIỆN ẢNH DORAEMON: NOBITA VÀ VÙNG ĐẤT LÝ TƯỞNG TRÊN BẦU TRỜI",
+      "type": "playing soon",
+      "time": "108",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/m/a/main_poster_-_dmmovie2023.jpg",
+      "theLoai": "Hoạt Hình",
+      "khoiChieu": "26-05-2023",
+      "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
+    },
+    {
+      "id": 4,
+      "nameMovie": "VÂY HÃM: KHÔNG LỐI THOÁT",
+      "type": "playing soon",
+      "time": "105",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/l/a/launching_poster-art-4x5.jpg",
+      "theLoai": "Hành Động, Tội phạm",
+      "khoiChieu": "02-06-2023",
+      "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
+    },
+    {
+      "id": 5,
+      "nameMovie": "TRANSFORMERS: QUÁI THÚ TRỖI DẬY",
+      "type": "comming soon",
+      "time": "127",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/7/0/700x1000_.jpg",
+      "theLoai": "Hành Động, Khoa Học Viễn Tưởng, Phiêu Lưu",
+      "khoiChieu": "09-06-2023",
+      "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
+    },
+    {
+      "id": 6,
+      "nameMovie": "BÉ TRỨNG: NÁO LOẠN CHÂU PHI",
+      "type": "comming soon",
+      "time": "89",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/b/_/b_tr_ng_-_700_x_1000_px.jpg",
+      "theLoai": "Hoạt Hình",
+      "khoiChieu": "09-06-2023",
+      "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
+    },
+    {
+      "id": 7,
+      "nameMovie": "FLASH",
+      "type": "comming soon",
+      "time": "144",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/v/n/vn_flash_vert_intl_montage_2764x4096.jpg",
+      "theLoai": "Hành Động, Phiêu Lưu, Thần thoại",
+      "khoiChieu": "26-06-2023",
+      "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
+    },
+    {
+      "id": 8,
+      "nameMovie": "MAVKA: THẦN THOẠI RỪNG XANH",
+      "type": "comming soon",
+      "time": "105",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/m/a/mavka_th_n_tho_i_r_ng_xanh_-_payoff_poster_-_kc_16.06.2023.jpg",
+      "theLoai": "Hoạt Hình",
+      "khoiChieu": "16-06-2023",
+      "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
+    }
+  ],
+  "movieVenue": [
+    {
+      "location": "TP HCM",
+      "name": "CGV Vincom Plaza HCM",
+      "showTime": [
+        {
+          "time": "8:00 AM"
+        },
+        {
+          "time": "10:50 AM"
+        },
+        {
+          "time": "19:20 PM"
+        },
+        {
+          "time": "22:00 PM"
+        }
+      ]
+    },
+    {
+      "location": "TP HCM",
+      "name": "CGV Menas Mall (CGV CT Plaza)",
+      "showTime": [
+        {
+          "time": "20:00 PM"
+        },
+        {
+          "time": "11:20 AM"
+        },
+        {
+          "time": "9:25 AM"
+        },
+        {
+          "time": "22:45 PM"
+        }
+      ]
+    },
+    {
+      "location": "TP HCM",
+      "name": "CGV Crescent Mall",
+      "showTime": [
+        {
+          "time": "18:00 PM"
+        },
+        {
+          "time": "11:50 AM"
+        },
+        {
+          "time": "9:20 AM"
+        },
+        {
+          "time": "21:00 PM"
+        }
+      ]
+    },
+    {
+      "location": "Da Nang",
+      "name": "CGV Vincom Đà Nẵng",
+      "showTime": [
+        {
+          "time": "18:50 PM"
+        },
+        {
+          "time": "11:50 AM"
+        },
+        {
+          "time": "9:20 AM"
+        },
+        {
+          "time": "21:30 PM"
+        }
+      ]
+    },
+    {
+      "location": "Da Nang",
+      "name": "CGV Vĩnh Trung Plaza",
+      "showTime": [
+        {
+          "time": "18:00 PM"
+        },
+        {
+          "time": "11:10 AM"
+        },
+        {
+          "time": "9:30 AM"
+        },
+        {
+          "time": "21:00 PM"
+        }
+      ]
+    },
+    {
+      "location": "Ha Noi",
+      "name": "CGV Vincom Center Bà Triệu",
+      "showTime": [
+        {
+          "time": "19:20 PM"
+        },
+        {
+          "time": "10:50 AM"
+        },
+        {
+          "time": "8:40 AM"
+        },
+        {
+          "time": "23:00 PM"
+        }
+      ]
+    },
+    {
+      "location": "Ha Noi",
+      "name": "CGV Hồ Gươm Plaza",
+      "showTime": [
+        {
+          "time": "15:00 PM"
+        },
+        {
+          "time": "10:55 AM"
+        },
+        {
+          "time": "7:50 AM"
+        },
+        {
+          "time": "22:30 PM"
+        }
+      ]
+    },
+    {
+      "location": "Ha Noi",
+      "name": "CGV Aeon Long Biên",
+      "showTime": [
+        {
+          "time": "19:00 PM"
+        },
+        {
+          "time": "10:10 AM"
+        },
+        {
+          "time": "8:20 AM"
+        },
+        {
+          "time": "23:00 PM"
+        }
+      ]
+    }
+  ],
+  "listOrders": [
+    {
+      "idUser": 1,
+      "idProducts": "3",
+      "name": "TP HCM",
+      "time": "19:20 PM",
+      "day": 8,
+      "month": "Jun",
+      "dayOfWeek": "Thu",
+      "nameCinema": "CGV Vincom Plaza HCM",
+      "seats": [
+        "J7",
+        "J6"
+      ],
+      "nameMovie": "PHIM ĐIỆN ẢNH DORAEMON: NOBITA VÀ VÙNG ĐẤT LÝ TƯỞNG TRÊN BẦU TRỜI",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/m/a/main_poster_-_dmmovie2023.jpg",
+      "price": 110000,
+      "id": 1
+    },
+    {
+      "idUser": 1,
+      "idProducts": "2",
+      "name": "Da Nang",
+      "time": "9:20 AM",
+      "day": 8,
+      "month": "Jun",
+      "dayOfWeek": "Thu",
+      "nameCinema": "CGV Vincom Đà Nẵng",
+      "seats": [
+        "B6",
+        "B5"
+      ],
+      "nameMovie": "FAST AND FURIOUS X",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/7/0/700x1000-fastx_1.jpg",
+      "price": 110000,
+      "id": 2
+    }
+  ]
+}
