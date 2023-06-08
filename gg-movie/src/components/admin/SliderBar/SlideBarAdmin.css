@@ -1,0 +1,82 @@
+.sidebar-wrappers {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  background-color: #1B1C1E;
+  padding: 10px 0 20px;
+  z-index: 100;
+  box-shadow: 0 5px 11px rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  border-bottom: 1px solid #323335;
+  padding: 0 20px 30px;
+}
+
+.logo-admin {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+  color: white !important;
+}
+
+.list-manager {
+  display: flex;
+  flex-direction: column;
+   gap: 20px;
+}
+
+.list-manager li:first-child {
+  margin-top: 30px;
+}
+
+.list-manager li a {
+  color: white;
+  padding: 15px 20px;
+  display: flex;align-items: center;
+  gap: 15px;
+}
+
+.list-manager li:hover {
+  background-color: #323335;
+  cursor: pointer;
+}
+
+.list-manager li.active {
+  background-color: #323335;
+  border-left: 3px solid #fff;
+}
+
+.list-manager li span {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.sign-out {
+  position: absolute;
+  bottom: 20px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.btn-sign-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:8px;
+  width: 100%;
+  background-color: #323335;
+  border-left: 3px solid #fff;
+  margin: 0 ;
+  padding: 15px 0;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+}
+.btn-sign-out:hover{
+  background-color: #646466;
+}

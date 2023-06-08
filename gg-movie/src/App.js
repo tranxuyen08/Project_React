@@ -1,10 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/header/Header';
-import Banner from './components/banner/Banner';
-import SelectionMovie from './components/selectionMovie/SelectionMovie';
-import Event from './components/event/Event';
-import Footer from './components/footer/Footer';
 import HomePages from './pages/home/HomePages';
 import { Route, Routes } from 'react-router-dom';
 import MoviePlaying from './pages/movePlaying/MoviePlaying';
@@ -20,7 +15,10 @@ import Booking from './components/booking/Booking';
 import CheckOut from './components/checkout/CheckOut';
 import UploadImage from './components/uploadimage/UploadImage';
 import { handleCallLocation } from './redux/reducer/LocaltionSlice';
-
+import Admin from './components/admin/Admin';
+import Users from './components/admin/User/Users';
+import HistoryProducts from './components/admin/HistoryProducts/HistoryProducts';
+import ProductManager from './components/admin/ProductsManager/ProductManager';
 function App() {
   const dispatch = useDispatch()
   const [renderNameMOvie, setRenderNameMovie] = useState('')
@@ -48,6 +46,11 @@ function App() {
       <Route path='/booking-tickets' element={<HomePages><Booking/></HomePages>} />
       <Route path='/checkout' element={<HomePages><CheckOut/></HomePages>} />
       <Route path='/upload-image' element={<UploadImage/>}/>
+      <Route path='/admin' element={<Admin/>}>
+        <Route path='user-managerment' element={<Users/>}/>
+        <Route path='history-order' element={<HistoryProducts/>}/>
+        <Route path='products-manager' element={<ProductManager/>}/>
+      </Route>
     </Routes>
   );
 }
