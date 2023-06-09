@@ -9,5 +9,14 @@ class ProductsAPI {
     const url = `products/${id}`
     return axiosClient.delete(url)
   }
+  static postProduct(param){
+    const url = "products"
+    return axiosClient.post(url,param)
+  }
+  static updateProduct(param) {
+    console.log(param);
+    const url = `products/${param.id}`
+    return axiosClient.patch(url,param)
+  }
 }
 export default ProductsAPI

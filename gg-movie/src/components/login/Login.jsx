@@ -6,10 +6,12 @@ import { useNavigate } from "react-router-dom";
 import { login } from "../../redux/reducer/UserSlice";
 import { ToastContainer, toast } from "react-toastify";
 import './Login.css'
+import { updateHeader } from "../../redux/reducer/UpdateSlice";
 const Login = () => {
   useEffect(() => {
     localStorage.removeItem("user");
     localStorage.removeItem("accessTokenLogin");
+    localStorage.removeItem("order");
   }, []);
   const [inputValue, setInputValue] = useState({});
   const [isError,setIsError] = useState('')
@@ -36,6 +38,7 @@ const Login = () => {
           theme: "light",
         });
         setTimeout(() => {
+          dispatch(updateHeader())
           navigate("/");
         }, 2000);
         setIsError("")
@@ -52,7 +55,6 @@ const Login = () => {
         });
         setIsError("Vui Long Nhap Du Thong Tin")
       }
-
   };
   return (
     <>

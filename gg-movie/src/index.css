@@ -34,9 +34,9 @@ img{
 .section{
   margin-bottom: 50px;
 }
-.container{
+/* .container{
   max-width: 1114px !important;
-}
+} */
 select,
 option,
 input {

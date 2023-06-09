@@ -1,6 +1,9 @@
 .link-movie{
-  width:  260px;
+  width:  100%;
 }
 .card {
   width:100%!important;
+}
+.btn-buy:hover{
+  background-color: #bf2621;
 }

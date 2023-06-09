@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 const CommingSoon = () => {
   const productsList = useSelector((state) => state.products);
   const renderMovieType = productsList.filter(
-    (value) => value.type == "comming soon"
+    (value) => value.status == "Comming Soon"
   );
 
   const navigate = useNavigate();

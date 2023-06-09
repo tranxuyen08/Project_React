@@ -2,8 +2,9 @@
   margin-bottom: 50px;
 } */
 .content-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
   justify-content: space-between;
 }
 
@@ -38,9 +39,23 @@ p {
 }
 
 .btn-like {
+  border: 1px solid #1877f2;
+}
+.btn-like > p{
+  color: #1877f2;
+}
+.btn-like > i{
+  color: #1877f2 ;
+}
+.btn-like:hover{
   background-color: #1877f2;
 }
-
+.btn-like:hover p{
+  color: white;
+}
+.btn-like:hover i{
+  color: white;
+}
 .btn-buy {
   background-color: #e83731;
 }

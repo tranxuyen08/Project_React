@@ -9,7 +9,8 @@
       "month": "6",
       "year": "1998",
       "country": "DaNang",
-      "id": 1
+      "id": 1,
+      "role": 1
     },
     {
       "email": "tranxuyen081@gmail.com",
@@ -20,69 +21,135 @@
       "month": "6",
       "year": "1998",
       "country": "DaNang",
-      "id": 2
+      "id": 2,
+      "role": 2
+    },
+    {
+      "email": "tranxuyen0338@gmail.com",
+      "password": "$2a$10$.1daIWHsQtfH/efU5TDJ..nTww0wJFC83arflNM4m8g5.o3BswDVu",
+      "name": "tran ngoc xuyen",
+      "phone-number": "4444444444",
+      "day": "1",
+      "month": "2",
+      "year": "1976",
+      "country": "HaNoi",
+      "id": 3,
+      "role": 2
+    },
+    {
+      "email": "tranxuyen0242428@gmail.com",
+      "password": "$2a$10$3gTP6IFz.0BhVZTl6gW5YO0loXw6VZA7PbdPsFgAdrvqJjA3hXEAO",
+      "name": "tran ngoc xuyen",
+      "phone-number": "2324234242",
+      "day": "1",
+      "month": "1",
+      "year": "1976",
+      "country": "TP-HCM",
+      "id": 4,
+      "role": 2
+    },
+    {
+      "email": "xuyentn@gmail.com",
+      "password": "$2a$10$pGGGdDNFyqLw7tYc4yxJl.xZUzWd3KwnwRGl8vEGsQX4I.tC76rga",
+      "name": "Xuyen",
+      "phone-number": "0333232333",
+      "day": "1",
+      "month": "1",
+      "year": "1992",
+      "country": "HaNoi",
+      "id": 5,
+      "role": 2
     }
   ],
   "products": [
     {
-      "id": 2,
-      "nameMovie": "FAST AND FURIOUS X",
-      "type": "playing soon",
-      "time": "141",
-      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/7/0/700x1000-fastx_1.jpg",
-      "theLoai": "Hành Động, Tội phạm",
-      "khoiChieu": "19-05-2023",
-      "trailler": "https://www.youtube.com/embed/eoOaKN4qCKw"
-    },
-    {
       "id": 4,
       "nameMovie": "VÂY HÃM: KHÔNG LỐI THOÁT",
-      "type": "playing soon",
+      "status": "Playing Soon",
       "time": "105",
       "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/l/a/launching_poster-art-4x5.jpg",
-      "theLoai": "Hành Động, Tội phạm",
-      "khoiChieu": "02-06-2023",
+      "type": [
+        "Hành Động",
+        " Tội phạm"
+      ],
+      "day": "02",
+      "month": "06",
+      "year": "2023",
       "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
     },
     {
       "id": 5,
       "nameMovie": "TRANSFORMERS: QUÁI THÚ TRỖI DẬY",
-      "type": "comming soon",
+      "status": "Comming Soon",
       "time": "127",
       "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/7/0/700x1000_.jpg",
-      "theLoai": "Hành Động, Khoa Học Viễn Tưởng, Phiêu Lưu",
-      "khoiChieu": "09-06-2023",
+      "type": [
+        "Hành Động",
+        "Khoa Học Viễn Tưởng",
+        "Phiêu Lưu"
+      ],
+      "day": "09",
+      "month": "06",
+      "year": "2023",
       "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
     },
     {
       "id": 6,
       "nameMovie": "BÉ TRỨNG: NÁO LOẠN CHÂU PHI",
-      "type": "comming soon",
+      "status": "Comming Soon",
       "time": "89",
       "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/b/_/b_tr_ng_-_700_x_1000_px.jpg",
-      "theLoai": "Hoạt Hình",
+      "type": [
+        "Hoạt Hình"
+      ],
       "khoiChieu": "09-06-2023",
-      "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
+      "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc",
+      "day": "09",
+      "month": "06",
+      "year": "2023"
     },
     {
       "id": 7,
       "nameMovie": "FLASH",
-      "type": "comming soon",
+      "status": "Comming Soon",
       "time": "144",
       "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/v/n/vn_flash_vert_intl_montage_2764x4096.jpg",
-      "theLoai": "Hành Động, Phiêu Lưu, Thần thoại",
-      "khoiChieu": "26-06-2023",
+      "type": [
+        "Hành Động",
+        "Phiêu Lưu",
+        "Thần thoại"
+      ],
+      "day": "26",
+      "month": "06",
+      "year": "2023",
       "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
     },
     {
       "id": 8,
       "nameMovie": "MAVKA: THẦN THOẠI RỪNG XANH",
-      "type": "comming soon",
+      "status": "Comming Soon",
       "time": "105",
       "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/m/a/mavka_th_n_tho_i_r_ng_xanh_-_payoff_poster_-_kc_16.06.2023.jpg",
-      "theLoai": "Hoạt Hình",
-      "khoiChieu": "16-06-2023",
+      "type": [
+        "Hoạt Hình"
+      ],
+      "day": "16",
+      "month": "06",
+      "year": "2023",
       "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
+    },
+    {
+      "image": "https://firebasestorage.googleapis.com/v0/b/post-image-1ad40.appspot.com/o/image%2F980wx448h_34.jpg?alt=media&token=71ee3274-40ac-4532-932e-9898f9e73040",
+      "nameMovie": "cuoc doi Bui Van Vdsdsudsddsdsdsdd",
+      "status": "Playing Soon",
+      "type": [
+        "Hành Động",
+        "Tình Cảm"
+      ],
+      "day": "1",
+      "month": "1",
+      "year": "2023",
+      "id": 10
     }
   ],
   "movieVenue": [
@@ -249,6 +316,41 @@
       "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/m/a/main_poster_-_dmmovie2023.jpg",
       "price": 110000,
       "id": 1
+    },
+    {
+      "idUser": 1,
+      "idProducts": "4",
+      "name": "TP HCM",
+      "time": "22:00 PM",
+      "day": 9,
+      "month": "Jun",
+      "dayOfWeek": "Fri",
+      "nameCinema": "CGV Vincom Plaza HCM",
+      "seats": [
+        "J5",
+        "J6"
+      ],
+      "nameMovie": "VÂY HÃM: KHÔNG LỐI THOÁT",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/l/a/launching_poster-art-4x5.jpg",
+      "price": 110000,
+      "id": 2
+    },
+    {
+      "idUser": 1,
+      "idProducts": "4",
+      "name": "TP HCM",
+      "time": "22:45 PM",
+      "day": 9,
+      "month": "Jun",
+      "dayOfWeek": "Fri",
+      "nameCinema": "CGV Menas Mall (CGV CT Plaza)",
+      "seats": [
+        "J4"
+      ],
+      "nameMovie": "VÂY HÃM: KHÔNG LỐI THOÁT",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/l/a/launching_poster-art-4x5.jpg",
+      "price": 55000,
+      "id": 3
     }
   ]
 }

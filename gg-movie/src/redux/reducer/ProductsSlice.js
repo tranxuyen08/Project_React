@@ -8,7 +8,20 @@ export const callProductsAPI = createAsyncThunk(
     return response
   }
 )
-
+export const postProductsAPI = createAsyncThunk(
+  "products/postProduct",
+  async (action) => {
+    const response = await ProductsAPI.postProduct(action)
+    return response
+  }
+)
+export const handleUpdateProduct = createAsyncThunk(
+  'products/updateProduct',
+  async (action) =>{
+    const response = await ProductsAPI.updateProduct(action)
+    return response
+  }
+)
 export const productsSlice = createSlice({
   name: 'products',
   initialState: [],
@@ -18,6 +31,17 @@ export const productsSlice = createSlice({
       state = action.payload
       return state
     },
+    [postProductsAPI.fulfilled] : (state,action) =>{
+      state = [...state, action.payload]
+      return state
+    },
+    [handleUpdateProduct.fulfilled] : (state,action) =>{
+      console.log("action =====>", action)
+      console.log("state =======>", state)
+      const findIndex = state.findIndex((product) => product?.id == action.payload?.id)
+      state[findIndex] = action.payload
+      return state
+    }
   }
 })
 

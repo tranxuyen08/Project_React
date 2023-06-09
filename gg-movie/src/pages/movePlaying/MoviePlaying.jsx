@@ -8,8 +8,9 @@ import './MoviePlaying.css'
 const MoviePlaying = () => {
   const productsList = useSelector((state) => state.products);
   const renderMovieType = productsList.filter(
-    (value) => value.type == "playing soon"
+    (value) => value.status == "Playing Soon"
   );
+  console.log(renderMovieType);
   const navigate = useNavigate();
 
   return (

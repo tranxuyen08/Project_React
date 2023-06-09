@@ -1,40 +1,44 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function Header() {
-  const [user,setUser]= useState(JSON.parse(localStorage.getItem("user")))
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
+  const updateHeaderTop = useSelector(state => state.updateHeader)
   const router = useLocation()
-  useEffect(()=>{
-    if(router.pathname == '/login'){
-      setUser(undefined)
+  useEffect(() => {
+    if (router.pathname === "/login") {
+      setUser(undefined);
     }
-  },[router.pathname])
-
-
-
+  }, [router.pathname]);
+  useEffect(() =>{
+    setUser(JSON.parse(localStorage.getItem("user")))
+  },[updateHeaderTop])
   return (
     <>
       <div className="top-header">
         <div className="container">
           {user ? (
-            // Nếu user tồn tại
             <div className="top-header-content">
               <Link className="user-text" to={"/login"}>
-                <i class="fa-regular fa-user" style={{ color: "#000000" }}></i>
+                <i
+                  className="fa-regular fa-user"
+                  style={{ color: "#000000" }}
+                ></i>
                 <p>Xin Chào!</p>
               </Link>
               <Link to={"/login"}>{user.name}</Link>
               <p>/</p>
-              <Link  to={"/login"}>
-                Đăng Xuất
-              </Link>
+              <Link to={"/login"}>Đăng Xuất</Link>
             </div>
           ) : (
-            // Nếu user không tồn tại
             <div className="top-header-content">
               <Link to={"/login"}>
-                <i class="fa-regular fa-user" style={{ color: "#000000" }}></i>
+                <i
+                  className="fa-regular fa-user"
+                  style={{ color: "#000000" }}
+                ></i>
               </Link>
               <Link to={"/login"}>Đăng Nhập</Link>
               <p>/</p>
@@ -49,7 +53,10 @@ export default function Header() {
             <div className="title-content">
               <Link to="/">
                 <div className="cgv-logo">
-                  <img src="https://www.cgv.vn/skin/frontend/cgv/default/images/cgvlogo.png" alt="CGV Logo" />
+                  <img
+                    src="https://www.cgv.vn/skin/frontend/cgv/default/images/cgvlogo.png"
+                    alt="CGV Logo"
+                  />
                 </div>
               </Link>
             </div>
@@ -78,14 +85,20 @@ export default function Header() {
                 <div className="badge-recruitment">
                   <Link to="/tuyen-dung">Tuyển Dụng</Link>
                   <div className="recruitment">
-                    <img src="https://www.cgv.vn/skin//frontend/cgv/default/images/hot-jobs.png" alt="Hot Jobs" />
+                    <img
+                      src="https://www.cgv.vn/skin//frontend/cgv/default/images/hot-jobs.png"
+                      alt="Hot Jobs"
+                    />
                   </div>
                 </div>
               </li>
             </ul>
             <div className="buy-ticket-now">
               <Link to="/phim-dang-chieu">
-                <img src="https://www.cgv.vn/media/wysiwyg/news-offers/mua-ve_ngay.png" alt="Mua Vé Ngay" />
+                <img
+                  src="https://www.cgv.vn/media/wysiwyg/news-offers/mua-ve_ngay.png"
+                  alt="Mua Vé Ngay"
+                />
               </Link>
             </div>
           </div>

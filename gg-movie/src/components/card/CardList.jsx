@@ -15,7 +15,7 @@ function CardsList({ item }) {
             <Card.Title>{item.nameMovie}</Card.Title>
             <div class="cgv-movie-info">
               <span class="cgv-info-bold">Thể loại: </span>
-              <span class="cgv-info-normal">{item.theLoai}</span>
+              <span class="cgv-info-normal">{item.type}</span>
             </div>
             <div class="cgv-movie-info">
               <span class="cgv-info-bold">Thời lượng: </span>
@@ -23,13 +23,12 @@ function CardsList({ item }) {
             </div>
             <div class="cgv-movie-info">
               <span class="cgv-info-bold">Khởi chiếu: </span>
-              <span class="cgv-info-normal">{item.khoiChieu}</span>
+              <span class="cgv-info-normal">{item.day + "/" + item.month + "/" + item.year}</span>
             </div>
             <div className="action">
               <button className="btn-style btn-like">
                 <i
                   class="fa-solid fa-thumbs-up"
-                  style={{ color: "#ffffff" }}
                 ></i>
                 <p>Like</p>
               </button>

@@ -20,10 +20,14 @@ import Users from './components/admin/User/Users';
 import HistoryProducts from './components/admin/HistoryProducts/HistoryProducts';
 import ProductManager from './components/admin/ProductsManager/ProductManager';
 import { handleCallHistoryOrders } from './redux/reducer/AdminSlice';
+import ModelAdmin from './components/admin/model/ModelAdmin';
+import RequiredAuth from './components/RequiredAuth';
+import RequiredAdmin from './components/RequiredAdmin';
 function App() {
   const dispatch = useDispatch()
   const [renderNameMOvie, setRenderNameMovie] = useState('')
   const products = useSelector(state => state.products)
+  console.log("products", products)
   const listOrders = useSelector(state => state.listOrders)
   useEffect(() => {
     const getProduct = async () => {
@@ -31,13 +35,12 @@ function App() {
     }
     getProduct()
   }, [])
-  useEffect(() =>{
+  useEffect(() => {
     const getLocation = async () => {
       await dispatch(handleCallLocation()).unwrap()
     }
     getLocation()
-  },[])
-
+  }, [])
   return (
     <Routes>
       <Route path='/' index element={<HomePages><ComponentsChild /></HomePages>} />
@@ -46,13 +49,18 @@ function App() {
       <Route path='/detail-product/:id' element={<HomePages><DetailProduct /></HomePages>} />
       <Route path='/register' element={<HomePages><Register /></HomePages>} />
       <Route path='/login' element={<HomePages><Login /></HomePages>} />
-      <Route path='/booking-tickets' element={<HomePages><Booking/></HomePages>} />
-      <Route path='/checkout' element={<HomePages><CheckOut/></HomePages>} />
-      <Route path='/upload-image' element={<UploadImage/>}/>
-      <Route path='/admin' element={<Admin/>}>
-        <Route path='user-managerment' element={<Users/>}/>
-        <Route path='history-order' element={<HistoryProducts/>}/>
-        <Route path='products-manager' element={<ProductManager/>}/>
+      <Route path='/upload-image' element={<UploadImage />} />
+      <Route element={<RequiredAuth />}>
+        <Route path='/booking-tickets' element={<HomePages><Booking /></HomePages>} />
+        <Route path='/checkout' element={<HomePages><CheckOut /></HomePages>} />
+      </Route>
+      <Route element={<RequiredAdmin />}>
+        <Route path='/admin' element={<Admin />}>
+         <Route path='user-managerment' index element={<Users />} />
+          <Route path='history-order' element={<HistoryProducts />} />
+          <Route path='products-manager' element={<ProductManager />} />
+          <Route path='model' element={<ModelAdmin />} />
+        </Route>
       </Route>
     </Routes>
   );

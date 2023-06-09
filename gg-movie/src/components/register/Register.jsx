@@ -14,7 +14,6 @@ const Register = () => {
     localStorage.removeItem("accessTokenLogin");
   }, []);
   const [valueInput, setValueInput] = useState({});
-  const [isCheck, setIsCheck] = useState(true);
   const [inputError, setInputError] = useState({});
 
   const dispatch = useDispatch();
@@ -91,6 +90,7 @@ const Register = () => {
     setValueInput({
       ...valueInput,
       [e.target.name]: e.target.value,
+      role: 2
     });
   };
   const handleRegister = async (e) => {

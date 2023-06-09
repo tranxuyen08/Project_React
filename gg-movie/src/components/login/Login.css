@@ -2,6 +2,8 @@
   color: red;
 }
 #cgv-btnsignup{
+  display: flex;
+  justify-content: center;
   padding-bottom: 20px;
 }
 .sect-login{

@@ -1,47 +1,65 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import SlideBarAdmin from "../SliderBar/SlideBarAdmin";
 import { AiFillDelete, AiOutlineVideoCameraAdd } from "react-icons/ai";
-import { BiAddToQueue } from "react-icons/bi";
+import { FaEdit } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 import ProductsAPI from "../../../api/ProductAPI";
 import { callProductsAPI } from "../../../redux/reducer/ProductsSlice";
 import ModelComfirmDelete from "../../modelComfirm/ModelComfirmDelete";
-
+import ModelAdmin from "../model/ModelAdmin";
 
 const ProductManager = () => {
   const productsList = useSelector((state) => state.products);
   const dispatch = useDispatch();
   const [showConfirmModal, setShowConfirmModal] = useState(false);
-  const idDelete = useRef()
+  const [showCreateModal, setShowCreateModal] = useState(false);
+  const [deleteProductId, setDeleteProductId] = useState(null);
+  const [editProduct, setEditProduct] = useState({});
+  //mo modal
+  const handleCreate = () => {
+    setShowCreateModal(true);
+  };
+  //dong modal
+  const handleCreateModalClose = () => {
+    setShowCreateModal(false);
+  };
+
   const handleConfirm = async () => {
     // Xử lý khi người dùng đồng ý
     setShowConfirmModal(false); // Ẩn modal confirm
 
-    // Tiếp tục xử lý thanh toán
-    ProductsAPI.deleteProduct(idDelete.current).then(()=>{
-      toast.success("Xoa Thành Công", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
+    if (deleteProductId) {
+      ProductsAPI.deleteProduct(deleteProductId).then(() => {
+        toast.success("Xóa thành công", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+        dispatch(callProductsAPI()).unwrap();
       });
-      dispatch(callProductsAPI()).unwrap()
-    });
-
+    }
   };
+
   const handleCancel = () => {
     // Xử lý khi người dùng không đồng ý
     setShowConfirmModal(false); // Ẩn modal confirm
     // Hủy bỏ thanh toán hoặc thực hiện các hành động khác
   };
+
   const handleDelete = (id) => {
-    idDelete.current = id
+    setDeleteProductId(id);
     setShowConfirmModal(true);
+  };
+
+  const handleEdit = (item) => {
+    setShowCreateModal(true);
+    setEditProduct(item);
   };
 
   return (
@@ -63,17 +81,17 @@ const ProductManager = () => {
         <div className="table-content">
           <div className="wrapper-title">
             <span className="sperator"></span>
-            <span className="title-page">Products Manager</span>
+            <span className="title-page">Quan Ly San Pham</span>
           </div>
           <table>
             <thead>
               <tr>
-                <th>NO</th>
-                <th>Image Products</th>
-                <th>Name Movie</th>
+                <th>STT</th>
+                <th>Anh</th>
+                <th>Teen Phim</th>
                 <th>The Loai</th>
-                <th>Show Time</th>
-                <th>Action</th>
+                <th>Ngay Chieu</th>
+                <th colSpan={2}>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -83,15 +101,19 @@ const ProductManager = () => {
                     <td>{index + 1}</td>
                     <td>
                       <div className="content-img">
-                        <img src={item.image} />
+                        <img src={item.image} alt="product" />
                       </div>
                     </td>
                     <td>{item.nameMovie}</td>
-                    <td>{item.theLoai}</td>
-                    <td>{item.khoiChieu}</td>
+                    <td>{item.type}</td>
+                    <td>{item.day + "/" + item.month + "/" +item.year}</td>
                     <td>
                       <AiFillDelete
                         onClick={() => handleDelete(item.id)}
+                        className="btn-delete"
+                      />
+                      <FaEdit
+                        onClick={() => handleEdit(item)}
                         className="btn-delete"
                       />
                     </td>
@@ -100,7 +122,7 @@ const ProductManager = () => {
               })}
             </tbody>
           </table>
-          <button className="btn-add">
+          <button onClick={handleCreate} className="btn-add">
             <AiOutlineVideoCameraAdd />
             Add Movie
           </button>
@@ -108,6 +130,14 @@ const ProductManager = () => {
             <ModelComfirmDelete
               onConfirm={handleConfirm}
               onCancel={handleCancel}
+            />
+          )}
+          {showCreateModal && (
+            <ModelAdmin
+              editProduct={editProduct}
+              setShowCreateModal={setShowCreateModal}
+              handleCreateModalClose={handleCreateModalClose}
+              onClose={handleCreateModalClose}
             />
           )}
         </div>
