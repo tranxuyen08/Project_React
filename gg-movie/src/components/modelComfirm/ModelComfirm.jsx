@@ -15,8 +15,8 @@ export const ModelComfirm = ({ onConfirm, onCancel }) => {
       <div className="confirmation-modal-content">
         <p>Bạn chắc chắn muốn mua?</p>
         <div className="confirmation-modal-actions">
-          <button className="btn-style btn-yes" onClick={handleConfirm}>Yes</button>
-          <button className="btn-style btn-no" onClick={handleCancel}>No</button>
+          <button className="btn-style btn-yes" onClick={handleConfirm}>Đồng Ý</button>
+          <button className="btn-style btn-no" onClick={handleCancel}>Huỷ Bỏ</button>
         </div>
       </div>
     </div>

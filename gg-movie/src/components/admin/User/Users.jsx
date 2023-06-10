@@ -14,14 +14,14 @@ const Users = () => {
       <div className="table-content">
         <div className="wrapper-title">
           <span className="sperator"></span>
-          <span className="title-page">My Admin</span>
+          <span className="title-page">Quản Lý Người Dùng</span>
         </div>
         <table>
           <thead>
             <tr>
-              <th>NO</th>
-              <th>ID User</th>
-              <th>Name</th>
+              <th>STT</th>
+              <th>ID Người Dùng</th>
+              <th>Tên</th>
               <th>Email</th>
             </tr>
           </thead>

@@ -60,18 +60,18 @@ const HistoryProducts = () => {
         <div className="table-content">
           <div className="wrapper-title">
             <span className="sperator"></span>
-            <span className="title-page">History Orders</span>
+            <span className="title-page">Lịch Sử Mua Hàng</span>
           </div>
           <table>
             <thead>
               <tr>
-                <th>NO</th>
-                <th>ID User</th>
+                <th>STT</th>
+                <th>ID Người Dùng</th>
                 <th>Email</th>
-                <th>Name Movie</th>
-                <th>qty</th>
-                <th>Price</th>
-                <th>Action</th>
+                <th>Tên Phim</th>
+                <th>Số Lượng</th>
+                <th>Giá</th>
+                <th>Hành Động</th>
               </tr>
             </thead>
             <tbody>

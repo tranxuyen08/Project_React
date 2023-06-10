@@ -24,7 +24,7 @@ const DetailProduct = () => {
       khoiChieu: ""
   }
 
-  const handleBuyTicket = () => {
+  const handleBuyTicket =  () => {
     const user = JSON.parse(localStorage.getItem("user"));
     if (user == null) {
       navigate("/login");
@@ -32,8 +32,8 @@ const DetailProduct = () => {
     setShowPopup(true);
     setOrder({
       ...order,
-      idUser: user.id,
-      idProducts: params.id
+      idUser: user?.id,
+      idProducts: params?.id
     })
   };
   localStorage.setItem('order', JSON.stringify(order))
@@ -68,7 +68,7 @@ const DetailProduct = () => {
                   <button className="btn-style btn-like">
                     <i
                       className="fa-solid fa-thumbs-up"
-                      style={{ color: "#ffffff" }}
+                      style={{ color: "#1877f2" }}
                     ></i>
                     <p>Like</p>
                   </button>
@@ -103,12 +103,12 @@ const DetailProduct = () => {
                     <div className="infor-product">
                       <span className="label">Thể loại: </span>
                       <p className="text">
-                        {movieDetail?.theLoai}
+                        {movieDetail?.type}
                       </p>
                     </div>
                     <div className="infor-product">
                       <span className="label"> Khởi chiếu: </span>
-                      <p className="text">{movieDetail?.khoiChieu}</p>
+                      <p className="text">{movieDetail?.day + "/" + movieDetail?.month + "/" +movieDetail?.year}</p>
                     </div>
                     <div className="infor-product">
                       <span className="label"> Thời lượng:</span>

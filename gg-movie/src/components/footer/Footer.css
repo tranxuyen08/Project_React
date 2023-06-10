@@ -59,3 +59,23 @@
 .item-footer ul li i.fab.fa-google {
   color: #DB4437;
 }
+
+@media (max-width: 375px){
+  .list-footer{
+   grid-template-columns: auto;
+   justify-content: center;
+  }
+}
+@media (max-width: 414px){
+  .list-footer{
+   grid-template-columns: auto;
+   justify-content: center;
+  }
+}
+@media (max-width: 820px){
+  .list-footer{
+    width: 100%;
+   grid-template-columns: auto;
+   justify-content: center;
+  }
+}

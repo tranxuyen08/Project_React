@@ -5,7 +5,10 @@ import { BiAward, BiSubdirectoryRight } from "react-icons/bi";
 import { storage } from "../../../firebase";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { useDispatch, useSelector } from "react-redux";
-import { handleUpdateProduct, postProductsAPI } from "../../../redux/reducer/ProductsSlice";
+import {
+  handleUpdateProduct,
+  postProductsAPI,
+} from "../../../redux/reducer/ProductsSlice";
 
 const ModelAdmin = ({
   setShowCreateModal,
@@ -33,6 +36,22 @@ const ModelAdmin = ({
     "December",
   ];
   const years = Array.from(Array(10).keys()).map((year) => 2023 - year);
+
+  const resetForm = () => {
+    setNewProduct({
+      // Set giá trị mặc định cho các trường trong form
+      nameMovie: "",
+      status: "",
+      type: [],
+      day: "",
+      month: "",
+      year: "",
+      image: "",
+    });
+    setSelectedDay("");
+    setSelectedMonth("");
+    setSelectedYear("");
+  };
 
   const handleDayChange = (e) => {
     setSelectedDay(e.target.value);
@@ -68,7 +87,9 @@ const ModelAdmin = ({
   //xu ly nut dong
   const handleClose = (e) => {
     e.preventDefault();
+    resetForm();
     handleCreateModalClose();
+    console.log(newProduct);
   };
 
   const handleChangeInput = (e) => {
@@ -137,7 +158,8 @@ const ModelAdmin = ({
   // handle Update
   const handleUpdate = async (e) => {
     e.preventDefault();
-    await dispatch(handleUpdateProduct(newProduct)).unwrap()
+    handleCreateModalClose()
+    await dispatch(handleUpdateProduct(newProduct)).unwrap();
   };
   return (
     <>
@@ -283,12 +305,12 @@ const ModelAdmin = ({
               {newProduct.id ? (
                 <button onClick={handleUpdate} className="btn-submit">
                   <BiSubdirectoryRight />
-                  Update
+                  Cập Nhập
                 </button>
               ) : (
                 <button onClick={handleSubmit} className="btn-submit">
                   <BiSubdirectoryRight />
-                  Submit
+                  Thêm
                 </button>
               )}
             </form>

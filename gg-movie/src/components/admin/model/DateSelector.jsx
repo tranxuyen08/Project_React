@@ -35,7 +35,7 @@ const DateSelector = () => {
   };
 
   return (
-    
+
   );
 };
 

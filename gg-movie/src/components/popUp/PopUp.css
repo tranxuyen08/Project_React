@@ -28,9 +28,8 @@
 }
 
 .popup-inner button {
-  position: fixed;
-  top: 22px;
-  right: 72px;
+  text-align: right;
+  margin-bottom: 20px;
   background-color: #e32828;
   color: #ffffff;
   padding: 10px 20px;
@@ -53,9 +52,11 @@
   font-weight: 600;
   gap: 5px;
 }
-.choose-day > div > p {
+
+.choose-day>div>p {
   color: black;
 }
+
 .popup {
   position: fixed;
   top: 0;
@@ -149,12 +150,15 @@
   background-color: black;
   color: white;
 }
+
 .selectedDay {
   background-color: black;
 }
-.selectedDay > .choose-day > div > p{
+
+.selectedDay>.choose-day>div>p {
   color: white;
 }
+
 .popup-inner ul li.selected {
   background-color: black;
   color: white;
@@ -163,33 +167,48 @@
 .show-time>h3 {
   padding-top: 30px;
 }
+.close-button {
+  text-align: right;
+}
+
 .fixed-close-button {
   position: fixed;
   top: 10px;
   right: 10px;
   z-index: 9999;
 }
-.fixed-btn{
+
+.fixed-btn {
   position: relative;
 }
+
 .highlighted {
   background-color: black;
   color: white;
 }
-.btn-next{
+
+.btn-next {
   display: flex;
-  gap:  20px;
+  gap: 20px;
   align-items: center;
+  justify-content: flex-end;
   color: white;
   background-color: #e32828;
-  position: absolute !important;
-  top: 750px !important;
-  right: 10px !important;
+  margin-top: 20px;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
 
+button.btn-next {
+  text-align: right;
+}
 
+@media (max-width: 375px) {
+  .popup-inner button {
+    top: 83px;
+    right: 19px;
+  }
 
-
+}

@@ -8,6 +8,10 @@
   justify-content: space-between;
 }
 
+.content-list > a {
+  width: 100%;
+}
+
 .cgv-info-bold {
   color: black;
   font-weight: 700;
@@ -79,4 +83,18 @@ p {
 }
 .card-img{
   height: 350px;
+}
+
+@media (max-width:1200px){
+  .content-list{
+    grid-template-columns: auto auto auto;
+  }
+  .link-movie{
+    width: 330px;
+  }
+}
+@media (max-width:997px){
+  .content-list{
+    grid-template-columns: auto auto;
+  }
 }

@@ -87,11 +87,11 @@ const ProductManager = () => {
             <thead>
               <tr>
                 <th>STT</th>
-                <th>Anh</th>
-                <th>Teen Phim</th>
-                <th>The Loai</th>
-                <th>Ngay Chieu</th>
-                <th colSpan={2}>Action</th>
+                <th>Ảnh</th>
+                <th>Tên Phim</th>
+                <th>Thể Loại</th>
+                <th>Ngày Chiếu</th>
+                <th colSpan={2}>Hành Động</th>
               </tr>
             </thead>
             <tbody>
@@ -124,7 +124,7 @@ const ProductManager = () => {
           </table>
           <button onClick={handleCreate} className="btn-add">
             <AiOutlineVideoCameraAdd />
-            Add Movie
+            Thêm Phim
           </button>
           {showConfirmModal && (
             <ModelComfirmDelete

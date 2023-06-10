@@ -1,0 +1,35 @@
+.wrapper-movie {
+  margin: 0 50px;
+}
+
+.wrapper-movie {
+  margin: 0 100px;
+}
+
+.content-list {
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .wrapper-movie {
+    margin: 0 50px !important;
+  }
+}
+
+@media (max-width: 1314px) {
+  .wrapper-movie {
+    margin: 0 50px !important;
+  }
+
+  .wrapper-movie {
+    margin: 0 100px;
+  }
+}
+@media (max-width: 663px) {
+  .content-list{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}

@@ -30,7 +30,7 @@ function CardsList({ item }) {
                 <i
                   class="fa-solid fa-thumbs-up"
                 ></i>
-                <p>Like</p>
+                <p>Thích</p>
               </button>
               <Link to={"/detail-product"} className=" btn-style btn-buy">
                 <i

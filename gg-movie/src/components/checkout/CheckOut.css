@@ -89,3 +89,23 @@
   background-color: gray;
   color: white;
 }
+@media (max-width: 375px){
+  .bottom-content{
+    height: 500px;
+  }
+  .minicart-wrapper > ul{
+    display: block;
+  }
+  .product-detail{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .table-detail{
+    width: 300px;
+  }
+  .table-detail > table{
+    width: 300px;
+  }
+}

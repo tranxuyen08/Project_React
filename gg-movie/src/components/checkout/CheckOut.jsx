@@ -12,7 +12,7 @@ const CheckOut = () => {
   const listOrders = useSelector((state) => state.listOrders);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  
+
   const handleConfirm = async () => {
     // Xử lý khi người dùng đồng ý
     setShowConfirmModal(false); // Ẩn modal confirm
@@ -67,28 +67,28 @@ const CheckOut = () => {
                   <li>
                     <div className="checkout-products">
                       <div className="checkout-img">
-                        <img src={order.image} />
+                        <img src={order?.image} />
                       </div>
                       <div className="detail-checkout">
-                        <h4>{order.nameCinema}</h4>
-                        <h5>{order.nameMovie}</h5>
+                        <h4>{order?.nameCinema}</h4>
+                        <h5>{order?.nameMovie}</h5>
                         <div className="checkout-seats">
                           <p className="label">Số Ghế :</p>
-                          {order.seats &&
+                          {order?.seats &&
                             order?.seats.map((item) => {
                               return <p className="text">{item}</p>;
                             })}
                         </div>
                         <div className="time-play">
                           <p className="label">Suất Chiếu :</p>
-                          <p className="text">{order.time}</p>
+                          <p className="text">{order?.time}</p>
                           <div>
                             <div className="day">
-                              <p className="">{order.day}</p>
+                              <p className="">{order?.day}</p>
                             </div>
                             <div>
-                              <p className="text">{order.dayOfWeek}</p>
-                              <p className="text">{order.month}</p>
+                              <p className="text">{order?.dayOfWeek}</p>
+                              <p className="text">{order?.month}</p>
                             </div>
                           </div>
                         </div>

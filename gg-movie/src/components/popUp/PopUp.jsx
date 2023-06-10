@@ -11,7 +11,9 @@ const Popup = ({ handleClosePopup }) => {
   const [selectedBranch, setSelectedBranch] = useState(null);
   const location = useSelector((state) => state.movieVenue);
   const [renderLocation, setRenderLocation] = useState([]);
-  const [booking, setBooking] = useState(JSON.parse(localStorage.getItem("order")));
+  const [booking, setBooking] = useState(
+    JSON.parse(localStorage.getItem("order"))
+  );
   const [isBookingComplete, setIsBookingComplete] = useState(false);
   const navigate = useNavigate();
   const handleSelectDate = (date) => {
@@ -58,10 +60,10 @@ const Popup = ({ handleClosePopup }) => {
       navigate("/login");
     } else {
       setBooking({
-       ...booking,
-       userID: user.id
+        ...booking,
+        userID: user.id,
       });
-      localStorage.setItem("order", JSON.stringify(booking))
+      localStorage.setItem("order", JSON.stringify(booking));
       navigate("/booking-tickets");
     }
   };
@@ -111,6 +113,7 @@ const Popup = ({ handleClosePopup }) => {
               Da Nang
             </li>
           </ul>
+
           {renderLocation.map((item, index) => {
             return (
               <div key={index + 1} className="show-time">
@@ -133,14 +136,17 @@ const Popup = ({ handleClosePopup }) => {
               </div>
             );
           })}
+            <button
+              onClick={handleNext}
+              className={`btn-next ${isBookingComplete ? "" : "hidden"}`}
+            >
+              Next
+              <i
+                className="fa-solid fa-forward"
+                style={{ color: "#ffffff" }}
+              ></i>
+            </button>
         </div>
-        <button
-          onClick={handleNext}
-          className={`btn-next ${isBookingComplete ? "" : "hidden"}`}
-        >
-          Next
-          <i className="fa-solid fa-forward" style={{ color: "#ffffff" }}></i>
-        </button>
       </div>
     </div>
   );

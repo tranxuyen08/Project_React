@@ -1,5 +1,5 @@
 import "./SelectionMovie.css";
-import React, { useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -12,7 +12,7 @@ import { Navigation, Pagination } from "swiper";
 import HomePages from "../../pages/home/HomePages";
 export default function SelectionMovie() {
   const [activeSlide, setActiveSlide] = useState(0);
-
+  const [slidesPerView, setSlidePrtView] = useState(3)
   const goToPrevSlide = () => {
     setActiveSlide((prevSlide) => prevSlide - 1);
   };
@@ -20,6 +20,36 @@ export default function SelectionMovie() {
   const goToNextSlide = () => {
     setActiveSlide((prevSlide) => prevSlide + 1);
   };
+
+  useLayoutEffect(()=>{
+    function handleResize() {
+      // Lấy kích thước mới của màn hình
+      const screenWidth = window.innerWidth;
+
+      // Tùy chỉnh giá trị slidePerView dựa trên kích thước màn hình
+      let newSlidePerView;
+      if (screenWidth >= 1200) {
+        newSlidePerView = 4;
+      } else if (screenWidth >= 992) {
+        newSlidePerView = 3;
+      } else if (screenWidth >= 768) {
+        newSlidePerView = 2;
+      } else {
+        newSlidePerView = 1;
+      }
+
+      // Cập nhật giá trị slidePerView
+      setSlidePrtView(newSlidePerView);
+    }
+
+    // Gắn trình xử lý sự kiện resize vào sự kiện resize của cửa sổ
+    window.addEventListener('resize', handleResize);
+
+    // Hủy bỏ trình xử lý sự kiện khi component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  },[])
   return (
     <section className=" section sect-movie">
       <div className="container">
@@ -30,7 +60,7 @@ export default function SelectionMovie() {
             <Swiper
               dir="rtl"
               navigation={true}
-              slidesPerView={4}
+              slidesPerView={slidesPerView}
               spaceBetween={50}
               modules={[Navigation]}
               className="mySwiper"

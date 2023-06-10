@@ -63,6 +63,66 @@
   ],
   "products": [
     {
+      "id": 1,
+      "nameMovie": "FAST AND FURIOUS X",
+      "status": "Playing Soon",
+      "time": "141",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/7/0/700x1000-fastx_1.jpg",
+      "type": [
+        "Hành Động",
+        " Tội phạm"
+      ],
+      "day": "19",
+      "month": "05",
+      "year": "2023",
+      "trailler": "https://www.youtube.com/embed/eoOaKN4qCKw"
+    },
+    {
+      "id": 2,
+      "nameMovie": "ÔNG KẸ",
+      "status": "Playing Soon",
+      "time": "140",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/b/o/bogym_005b_g_vie-vn_4x5__1__1.jpg",
+      "type": [
+        "Hành Động",
+        " Khoa Học Viễn Tưởng"
+      ],
+      "day": "01",
+      "month": "06",
+      "year": "2023",
+      "trailler": "https://www.youtube.com/embed/eoOaKN4qCKw"
+    },
+    {
+      "id": 3,
+      "nameMovie": "NGƯỜI NHỆN: DU HÀNH VŨ TRỤ NHỆN",
+      "status": "Playing Soon",
+      "time": "140",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/r/s/rsz_spiderverse2_poster_4.jpg",
+      "type": [
+        "Hành Động",
+        " Tội phạm"
+      ],
+      "day": "01",
+      "month": "06",
+      "year": "2023",
+      "trailler": "https://www.youtube.com/embed/Wt0y8IH63jg"
+    },
+    {
+      "id": 3,
+      "nameMovie": "LẬT MẶT 6: TẤM VÉ ĐỊNH MỆNH",
+      "status": "Playing Soon",
+      "time": "140",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/l/m/lm6_2x3_layout.jpg",
+      "type": [
+        "Tâm Lý",
+        " Tội phạm"
+      ],
+      "day": "28",
+      "month": "04",
+      "year": "2023",
+      "trailler": "https://www.youtube.com/embed/2EnP2tVC00Q"
+    },
+    {
       "id": 4,
       "nameMovie": "VÂY HÃM: KHÔNG LỐI THOÁT",
       "status": "Playing Soon",
@@ -126,7 +186,7 @@
     },
     {
       "id": 8,
-      "nameMovie": "MAVKA: THẦN THOẠI RỪNG XANH",
+      "nameMovie": "MAVKA: THẦN THOẠI RỪNG XANH ",
       "status": "Comming Soon",
       "time": "105",
       "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/m/a/mavka_th_n_tho_i_r_ng_xanh_-_payoff_poster_-_kc_16.06.2023.jpg",
@@ -137,19 +197,6 @@
       "month": "06",
       "year": "2023",
       "trailler": "https://www.youtube.com/embed/tbZ-BmOBsuc"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/post-image-1ad40.appspot.com/o/image%2F980wx448h_34.jpg?alt=media&token=71ee3274-40ac-4532-932e-9898f9e73040",
-      "nameMovie": "cuoc doi Bui Van Vdsdsudsddsdsdsdd",
-      "status": "Playing Soon",
-      "type": [
-        "Hành Động",
-        "Tình Cảm"
-      ],
-      "day": "1",
-      "month": "1",
-      "year": "2023",
-      "id": 10
     }
   ],
   "movieVenue": [
@@ -351,6 +398,60 @@
       "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/l/a/launching_poster-art-4x5.jpg",
       "price": 55000,
       "id": 3
+    },
+    {
+      "idUser": 1,
+      "idProducts": "4",
+      "name": "TP HCM",
+      "time": "22:00 PM",
+      "day": 10,
+      "month": "Jun",
+      "dayOfWeek": "Sat",
+      "nameCinema": "CGV Vincom Plaza HCM",
+      "seats": [
+        "J5",
+        "J6"
+      ],
+      "nameMovie": "VÂY HÃM: KHÔNG LỐI THOÁT",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/l/a/launching_poster-art-4x5.jpg",
+      "price": 110000,
+      "id": 4
+    },
+    {
+      "idUser": 1,
+      "idProducts": "10",
+      "name": "TP HCM",
+      "time": "22:00 PM",
+      "day": 10,
+      "month": "Jun",
+      "dayOfWeek": "Sat",
+      "nameCinema": "CGV Vincom Plaza HCM",
+      "seats": [
+        "J6",
+        "J5"
+      ],
+      "nameMovie": "cuoc doi Bui Van Vdsdsudsddsdsdsdd",
+      "image": "https://firebasestorage.googleapis.com/v0/b/post-image-1ad40.appspot.com/o/image%2F980wx448h_34.jpg?alt=media&token=71ee3274-40ac-4532-932e-9898f9e73040",
+      "price": 110000,
+      "id": 5
+    },
+    {
+      "idUser": 1,
+      "idProducts": "1",
+      "name": "Da Nang",
+      "time": "21:30 PM",
+      "day": 10,
+      "month": "Jun",
+      "dayOfWeek": "Sat",
+      "nameCinema": "CGV Vincom Đà Nẵng",
+      "seats": [
+        "J5",
+        "J6"
+      ],
+      "price": 110000,
+      "nameMovie": "FAST AND FURIOUS X",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/7/0/700x1000-fastx_1.jpg",
+      "id": 6
     }
   ]
 }

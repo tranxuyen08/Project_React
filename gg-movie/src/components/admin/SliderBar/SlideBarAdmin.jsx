@@ -15,26 +15,26 @@ function SlideBarAdmin() {
           <li className={router.pathname === "/admin/user-managerment" ? "active":""}>
           <Link to={"/admin/user-managerment"}>
           <i class="fa-solid fa-users"></i>
-          <span>User Managerment</span>
+          <span>Quản Lý Người Dùng</span>
           </Link>
           </li>
           <li className={router.pathname === "/admin/history-order" ? "active":""}>
           <Link to={"/admin/history-order"}>
           <i class="fa-solid fa-cart-shopping"></i>
-          <span>History Order</span>
+          <span>Lịch Sử Mua Hàng</span>
           </Link>
           </li>
           <li className={router.pathname === "/admin/products-manager" ? "active":""}>
          <Link to={"/admin/products-manager"}>
          <i class="fa-solid fa-film"></i>
-          <span>Products Managerment</span>
+          <span>Quản Lý Sản Phẩm</span>
          </Link>
           </li>
         </ul>
       </div>
       <div className='sign-out'>
         <button className='btn-sign-out'>
-            <BiLogOut/> <span>Logout</span>
+            <BiLogOut/> <span>Đăng Xuất</span>
         </button>
       </div>
     </div>

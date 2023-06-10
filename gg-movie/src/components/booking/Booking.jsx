@@ -64,7 +64,7 @@ const Booking = () => {
       ...booking,
       seats: selectedSeats,
       nameMovie : productBooking?.nameMovie,
-      image : productBooking.image
+      image : productBooking?.image
     });
     localStorage.setItem("order", JSON.stringify(dataLocal));
     setIsBookingComplete(selectedSeats.length > 0);
@@ -78,19 +78,19 @@ const Booking = () => {
       <div className="container">
         <div className="content-booking">
           <div className="title-booking">
-            <h3>Booking Online</h3>
+            <h3>Mua Trực Tuyến</h3>
           </div>
           <div className="content-booking">
             <div className="booking-top">
               <h3 className="">Người / Ghế</h3>
             </div>
             <div className="screen">
-              <span className="text-screen">Man Hinh Chieu</span>
+              <span className="text-screen">Màn Hình Chiếu</span>
             </div>
             <ul className="list-seats">{renderSeats()}</ul>
             <div className="ticketbox-notice">
-              <div className="checked">Checked</div>
-              <div className="choosed">Đã Chọn</div>
+              <div className="checked">Chọn</div>
+              <div className="choosed">Đã Mua</div>
               <div className="classic">Thường</div>
               <div className="vip">VIP</div>
             </div>
@@ -117,7 +117,7 @@ const Booking = () => {
                   </li>
                   <li>
                     <div className="table-detail">
-                      <table className="table-detail">
+                      <table className="">
                         <tr>
                           <th className="size-large">Rạp</th>
                           <th>Suất Chiếu</th>
@@ -148,7 +148,7 @@ const Booking = () => {
           onClick={handleNext}
           className={`btn-booking ${isBookingComplete ? "" : "hidden"}`}
         >
-          Next
+          Tiếp
           <i className="fa-solid fa-forward" style={{ color: "#ffffff" }}></i>
         </button>
       </div>

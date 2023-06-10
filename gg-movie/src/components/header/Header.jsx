@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { Dropdown } from "react-bootstrap";
+import {FiMenu} from 'react-icons/fi'
 
 export default function Header() {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
-  const updateHeaderTop = useSelector(state => state.updateHeader)
-  const router = useLocation()
+  const updateHeaderTop = useSelector((state) => state.updateHeader);
+  const router = useLocation();
   useEffect(() => {
     if (router.pathname === "/login") {
       setUser(undefined);
     }
   }, [router.pathname]);
-  useEffect(() =>{
-    setUser(JSON.parse(localStorage.getItem("user")))
-  },[updateHeaderTop])
+  useEffect(() => {
+    setUser(JSON.parse(localStorage.getItem("user")));
+  }, [updateHeaderTop]);
   return (
     <>
       <div className="top-header">
@@ -48,7 +50,7 @@ export default function Header() {
         </div>
       </div>
       <header className="header">
-        <div className="container">
+        <div className="wrapper-header">
           <div className="header-content">
             <div className="title-content">
               <Link to="/">
@@ -100,6 +102,23 @@ export default function Header() {
                   alt="Mua Vé Ngay"
                 />
               </Link>
+            </div>
+            <div className=" drop-down">
+              <Dropdown className="d-inline mx-2">
+                <Dropdown.Toggle id="dropdown-autoclose-true">
+                  <FiMenu/>
+                  Menu
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#"> <Link className="link-drop" to="/phim-dang-chieu">Phim Đang Chiếu</Link></Dropdown.Item>
+                  <Dropdown.Item href="#"><Link  className="link-drop" to="/phim-sap-chieu">Phim Sắp Chiếu</Link></Dropdown.Item>
+                  <Dropdown.Item href="#"> <Link className="link-drop" to="/rap-ggm">Rạp CGV</Link></Dropdown.Item>
+                  <Dropdown.Item href="#"> <Link className="link-drop" to="/thanh-vien">Thành Viên</Link></Dropdown.Item>
+                  <Dropdown.Item href="#"><Link className="link-drop" to="/cultureplex">CULTUREPLEX</Link></Dropdown.Item>
+                  <Dropdown.Item href="#"><Link className="link-drop" to="/tuyen-dung">Tuyển Dụng</Link></Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
           </div>
         </div>

@@ -1,50 +1,93 @@
-.title-h2-product{
+.title-h2-product {
   background-image: none !important;
 }
-.content-detail{
+
+.content-detail {
   margin-bottom: 50px;
 }
-.product-essential{
+
+.product-essential {
   display: flex;
   width: 100%;
   gap: 2%;
 }
-.img-flim{
+
+.img-flim {
   width: 30%;
 }
-.img-flim > div:first-child{
+
+.img-flim>div:first-child {
   margin-bottom: 20px;
 }
-.detail-film{
+
+.detail-film {
   width: 70%;
 }
-.title-h3{
-  border-bottom: 1px solid #333 ;
+
+.title-h3 {
+  border-bottom: 1px solid #333;
   padding-bottom: 20px;
 }
-.infor-product{
+
+.infor-product {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
 }
-.label{
+
+.label {
   font-weight: 700;
   color: black;
 
 }
-.detail-action{
+
+.detail-action {
   display: flex;
   justify-content: space-around;
 }
-.btn-buy{
+
+.btn-buy {
   width: 150px;
   justify-content: space-around;
 }
-.trailer{
+
+.trailer {
   display: flex !important;
   width: 100%;
   justify-content: center !important;
 }
-.text{
+
+.text {
   color: #1f1b1b;
+}
+
+@media (max-width: 375px) {
+  .product-essential {
+    display: grid;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .img-flim {
+    width: 100%;
+  }
+  .detail-film{
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 412px) {
+  .product-essential {
+    display: grid;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .img-flim {
+    width: 100%;
+  }
+  .detail-film{
+    margin: 0;
+    width: 100%;
+  }
 }
