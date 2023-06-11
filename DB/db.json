@@ -59,6 +59,18 @@
       "country": "HaNoi",
       "id": 5,
       "role": 2
+    },
+    {
+      "email": "tranxuyen0812@gmail.com",
+      "password": "$2a$10$eewlsQgL37JLQmL4npXb3uv1hRtNmK.hljxKLROvsUq8fHYe2wbwm",
+      "name": "123",
+      "role": 2,
+      "phone-number": "112312312",
+      "day": "1",
+      "month": "2",
+      "year": "1975",
+      "country": "TP-HCM",
+      "id": 6
     }
   ],
   "products": [
@@ -170,7 +182,7 @@
     },
     {
       "id": 7,
-      "nameMovie": "FLASH",
+      "nameMovie": "FLASH SLOW",
       "status": "Comming Soon",
       "time": "144",
       "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/v/n/vn_flash_vert_intl_montage_2764x4096.jpg",
@@ -452,6 +464,43 @@
       "nameMovie": "FAST AND FURIOUS X",
       "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/7/0/700x1000-fastx_1.jpg",
       "id": 6
+    },
+    {
+      "idUser": 1,
+      "idProducts": "5",
+      "name": "Da Nang",
+      "time": "21:30 PM",
+      "day": 11,
+      "month": "Jun",
+      "dayOfWeek": "Sun",
+      "nameCinema": "CGV Vincom Đà Nẵng",
+      "seats": [
+        "J5",
+        "J6"
+      ],
+      "nameMovie": "TRANSFORMERS: QUÁI THÚ TRỖI DẬY",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/7/0/700x1000_.jpg",
+      "price": 110000,
+      "id": 7
+    },
+    {
+      "idUser": 6,
+      "idProducts": "1",
+      "name": "Da Nang",
+      "time": "9:20 AM",
+      "day": 12,
+      "month": "Jun",
+      "dayOfWeek": "Mon",
+      "nameCinema": "CGV Vincom Đà Nẵng",
+      "seats": [
+        "B6",
+        "B7",
+        "C3"
+      ],
+      "nameMovie": "FAST AND FURIOUS X",
+      "image": "https://www.cgv.vn/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/7/0/700x1000-fastx_1.jpg",
+      "price": 165000,
+      "id": 8
     }
   ]
 }

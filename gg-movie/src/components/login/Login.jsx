@@ -28,7 +28,7 @@ const Login = () => {
     e.preventDefault();
       try {
         await dispatch(login(inputValue)).unwrap();
-        toast.success("Đăng Nhập Thành Công!", {
+        toast.success("Đăng Nhập Thành Công !!", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -54,7 +54,7 @@ const Login = () => {
           progress: undefined,
           theme: "colored",
         });
-        setIsError("Vui Long Nhap Du Thong Tin")
+        setIsError("Vui Kiểm Tra Lại Thông Tin")
       }
   };
   return (
