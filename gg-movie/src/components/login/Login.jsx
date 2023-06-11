@@ -8,6 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import './Login.css'
 import { updateHeader } from "../../redux/reducer/UpdateSlice";
 const Login = () => {
+  const user = JSON.parse(localStorage.getItem('user')) ??{}
   useEffect(() => {
     localStorage.removeItem("user");
     localStorage.removeItem("accessTokenLogin");
@@ -27,7 +28,7 @@ const Login = () => {
     e.preventDefault();
       try {
         await dispatch(login(inputValue)).unwrap();
-        toast.success("Login Success!", {
+        toast.success("Đăng Nhập Thành Công!", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,

@@ -99,7 +99,7 @@ const Register = () => {
     if (isValid) {
       try {
         await dispatch(register(valueInput)).unwrap();
-        toast.success("Register thanh cong", {
+        toast.success("Đăng Ký Thành Công", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,

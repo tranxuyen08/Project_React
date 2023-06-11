@@ -87,9 +87,12 @@ const ModelAdmin = ({
   //xu ly nut dong
   const handleClose = (e) => {
     e.preventDefault();
-    resetForm();
+    setNewProduct(null);
+    setSelectedDay("");
+    setSelectedMonth("");
+    setSelectedYear("");
     handleCreateModalClose();
-    console.log(newProduct);
+    // resetForm();
   };
 
   const handleChangeInput = (e) => {
