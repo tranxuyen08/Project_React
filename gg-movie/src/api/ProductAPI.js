@@ -14,7 +14,6 @@ class ProductsAPI {
     return axiosClient.post(url,param)
   }
   static updateProduct(param) {
-    console.log(param);
     const url = `products/${param.id}`
     return axiosClient.patch(url,param)
   }

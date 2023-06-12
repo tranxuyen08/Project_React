@@ -81,7 +81,7 @@ const ProductManager = () => {
         <div className="table-content">
           <div className="wrapper-title">
             <span className="sperator"></span>
-            <span className="title-page">Quan Ly San Pham</span>
+            <span className="title-page">Quản Lý Sản Phẩm</span>
           </div>
           <table>
             <thead>

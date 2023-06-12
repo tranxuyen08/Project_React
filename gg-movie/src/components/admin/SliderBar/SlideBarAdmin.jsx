@@ -4,6 +4,11 @@ import {RiAdminFill} from 'react-icons/ri'
 import { Link, useLocation } from 'react-router-dom';
 function SlideBarAdmin() {
   const router = useLocation()
+  const admin = JSON.parse(localStorage.getItem('user')) ??{}
+  const handleLogOut = async () =>{
+    await localStorage.removeItem("user");
+    await localStorage.removeItem("accessTokenLogin");
+  }
 
   return (
     <div className="sidebar-wrappers">
@@ -33,7 +38,7 @@ function SlideBarAdmin() {
         </ul>
       </div>
       <div className='sign-out'>
-        <button className='btn-sign-out'>
+        <button onClick={handleLogOut} className='btn-sign-out'>
             <BiLogOut/> <span>Đăng Xuất</span>
         </button>
       </div>

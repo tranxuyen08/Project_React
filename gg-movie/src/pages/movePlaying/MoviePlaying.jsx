@@ -10,7 +10,6 @@ const MoviePlaying = () => {
   const renderMovieType = productsList.filter(
     (value) => value.status == "Playing Soon"
   );
-  console.log(renderMovieType);
   const navigate = useNavigate();
 
   return (

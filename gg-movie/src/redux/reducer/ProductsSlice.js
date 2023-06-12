@@ -36,8 +36,6 @@ export const productsSlice = createSlice({
       return state
     },
     [handleUpdateProduct.fulfilled] : (state,action) =>{
-      console.log("action =====>", action)
-      console.log("state =======>", state)
       const findIndex = state.findIndex((product) => product?.id == action.payload?.id)
       state[findIndex] = action.payload
       return state

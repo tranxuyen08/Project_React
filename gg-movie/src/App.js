@@ -27,7 +27,6 @@ function App() {
   const dispatch = useDispatch()
   const [renderNameMOvie, setRenderNameMovie] = useState('')
   const products = useSelector(state => state.products)
-  console.log("products", products)
   const listOrders = useSelector(state => state.listOrders)
   useEffect(() => {
     const getProduct = async () => {
