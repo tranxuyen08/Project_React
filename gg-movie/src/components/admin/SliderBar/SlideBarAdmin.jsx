@@ -1,13 +1,15 @@
 import './SlideBarAdmin.css'
 import {BiLogOut} from 'react-icons/bi'
 import {RiAdminFill} from 'react-icons/ri'
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 function SlideBarAdmin() {
+  const navigate = useNavigate()
   const router = useLocation()
   const admin = JSON.parse(localStorage.getItem('user')) ??{}
-  const handleLogOut = async () =>{
-    await localStorage.removeItem("user");
-    await localStorage.removeItem("accessTokenLogin");
+  const handleLogOut = () =>{
+     localStorage.removeItem("user");
+     localStorage.removeItem("accessTokenLogin");
+    navigate("/")
   }
 
   return (
